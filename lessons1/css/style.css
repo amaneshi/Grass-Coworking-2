@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+    padding: 50px 100px;
+}
+
+.header {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #acacac;
+}
+
+.logo h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+}
+.logo span {
+    display: block;
+    font-weight: 400;
+}
+
+.menu li {
+    display: inline-block;
+}
