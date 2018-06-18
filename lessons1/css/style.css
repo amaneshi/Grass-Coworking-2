@@ -1,7 +1,9 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
+
 ul {
     list-style: none;
 }
@@ -9,27 +11,75 @@ ul {
 .wrapper {
     max-width: 1366px;
     margin: 0 auto;
-    padding: 50px 100px;
 }
 
-.header {
-    padding-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
     border-bottom: 2px solid #acacac;
 }
 
+.header, .main {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    padding: 90px 100px;
+}
+
+.footer {
+    padding: 60px 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
 .logo h1 {
-    font-family: Arial, sans-serif;
     font-size: 36px;
     font-weight: bold;
 }
+
 .logo span {
     display: block;
-    font-weight: 400;
+    font-weight: normal;
 }
 
 .menu li {
     display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #040404;
+    font-size: 18px;
+    padding: 10px 33px;
+    cursor: pointer;
+}
+
+.menu a:hover, .current-page {
+    background: #b7b7b7;
+}
+
+.photo {
+    width: 330px;
+    height: 360px;
+    background-image: url('../img/photo.jpg');
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.info {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.info span {
+    font-weight: normal;
+}
+
+.main-right {
+    width: 50%;
+    text-align: center;
+    font-size: 100px;
 }
