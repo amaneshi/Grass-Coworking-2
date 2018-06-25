@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.clearfix:after,
+.clearfix:before {
+    display: table;
+    content: '';
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+header, main {
+    border-bottom: 2px solid #acacac;
+}
+
+.header {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    padding: 90px 100px;
+}
+
+.footer {
+    padding: 60px 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.logo h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.logo h1 span {
+    display: block;
+    font-weight: normal;
+}
+
+.logo .info p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.logo .info p:last-child {
+    margin-right: 0;
+}
+
+.logo .info span {
+    font-weight: normal;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #040404;
+    font-size: 18px;
+    padding: 10px 33px;
+    cursor: pointer;
+}
+
+.menu a:hover, .current-page {
+    background: #b7b7b7;
+}
+
+.main .photo {
+    width: 200px;
+    height: 200px;
+    background: white url("../img/photo.jpg") center center / cover;
+    margin: 20px;
+    float: left;
+}
+
+.main h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main .about-me p, .main .my-data p{
+    text-align: justify;
+}
+
+.main .my-data p:nth-of-type(odd) {
+    transform: rotate(2deg);
+    padding: 20px;
+}
+.main .my-data p:nth-of-type(even) {
+    transform: rotate(-2deg);
+    padding: 20px;
+}
+
+.my-data .photo {
+    width: 26vmax;
+    height: 20vmax;
+    border-radius: 200px 30px 200px;
+    box-shadow: 12px 22px 16px rgba(0,0,0,0.6);
+}
+
+.my-data .photo:nth-of-type(even) {
+    float: right;
+    border-radius: 30px 200px 30px;
+}
+
+.my-data .photo:nth-of-type(1) {
+    background-image: url('../img/photo1.png');
+}
+.my-data .photo:nth-of-type(2) {
+    background-image: url('../img/photo2.png');
+}
+.my-data .photo:nth-of-type(3) {
+    background-image: url('../img/photo3.png');
+}
