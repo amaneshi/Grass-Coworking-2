@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", serif;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100vh;
+    width: 100vw;
+}
+
+.contents a {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+    padding: 50px 150px;
+    margin: 50px;
+    background: #4bff4b;
+    border-radius: 50%;
+    transition: 1s ease-out;
+}
+
+.contents a:hover {
+    background: black;
+    color: white;
+    transform: scale(1.5) rotate(-15deg);
+    z-index: 10;
+}
