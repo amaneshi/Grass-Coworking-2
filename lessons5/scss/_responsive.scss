@@ -1,0 +1,248 @@
+@media only screen and (max-width: 1250px) {
+  .wrapper {
+    padding: 0 15px;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .actionCard__title {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .social-block img {
+    width: 24vw;
+  }
+
+  .mobile-menu {
+    display: block;
+    text-align: right;
+    width: 100px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav > *:hover + .navigation {
+    display: block;
+  }
+
+  .navigation {
+    position: absolute;
+    display: none;
+    width: 100px;
+    background: #fff;
+  }
+
+  .navigation li {
+    display: block;
+    height: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .main-picture-content h1 {
+    font-size: 35px;
+  }
+
+  .actionCard {
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__icon {
+      margin: 20px;
+      height: 11vw;
+      width: 11vw;
+      font-size: 8.5vw;
+    }
+    // &__icon
+  }
+  // actionCard
+
+  .aboutFoundationItem {
+    &__image {
+      height: 16vw;
+    }
+    // &__image
+
+    &__text {
+      font-size: 2vw;
+
+      span {
+        font-size: 3.5vw;
+      }
+      // span
+    }
+    // &__text
+  }
+  // aboutFoundationItem
+
+}
+
+@media screen and (max-width: 800px) {
+  .navigation-block {
+    padding: 2.5vw 0;
+  }
+
+  .navigation-block .donate {
+    padding: 2vw 3vw;
+  }
+
+  .mobile-menu {
+    font-size: 5vw;
+  }
+
+  .main-picture-content {
+    padding: 15px 0;
+  }
+
+  .actionCards {
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .actionCard {
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+
+    &__icon {
+      margin: 0;
+      margin-left: 2.5vw;
+      height: 32px;
+      width: 32px;
+      font-size: 20px;
+    }
+    // __icon
+
+    &__text {
+      width: 100%;
+    }
+    // __text
+
+    &__border {
+      margin: 0;
+    }
+    // __border
+
+    &__title {
+      padding-right: 20px;
+    }
+    // __title
+  }
+  // actionCard
+
+  .about-foundation-section {
+    margin: 10px 0;
+  }
+
+  .about-foundation-top h2 {
+    font-size: 5vw;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .main-picture-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: none;
+  }
+
+  .main-picture-content .buttons {
+    width: 65vw;
+    text-align: center;
+  }
+
+  .main-picture-content .button {
+    margin: 5px;
+    font-size: 2.5vw;
+  }
+
+  .main-picture-content h1 {
+    font-size: 5vw;
+  }
+
+  .main-picture-content p {
+    font-size: 2.7vw;
+  }
+
+  .button {
+    padding: 2vw 4.5vw;
+  }
+
+  .actionCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .actionCard {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+  .navigation-block .donate {
+    font-size: 3vw;
+  }
+
+  .about-foundation-top p {
+    font-size: 3.5vw;
+  }
+
+  .cards-section {
+    margin-top: -15vw;
+  }
+
+  .about-foundation-content {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .aboutFoundationItem {
+    width: 100%;
+    margin-top: 20px;
+
+    &__image {
+      height: auto;
+    }
+    // __image
+
+    &__text,
+    &__text span {
+      font-size: 25px;
+    }
+    // __text span
+  }
+  // aboutFoundationItem
+
+}
+
+@media screen and (max-width: 380px) {
+  .footer {
+    font-size: 45px;
+  }
+
+  .navigation-block .donate {
+    font-size: 2vw;
+  }
+
+
+  .cards-section {
+    margin: 0;
+  }
+
+  .actionCard {
+    width: 90%;
+  }
+  // actionCard
+}

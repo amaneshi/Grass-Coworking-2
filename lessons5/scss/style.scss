@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, div {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 65px;
+  background: #0d122b;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.productsItem {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  width: 275px;
+  height: 380px;
+  padding: 30px;
+  margin: 10px;
+  background: white;
+  border-radius: 20px;
+
+  &__img {
+    width: 210px;
+    height: 210px;
+    background: url("./../img/phone.png") center / contain no-repeat;
+    &-noImage {
+      width: 210px;
+      height: 210px;
+      background: url("./../img/phoneNo.png") center / contain no-repeat;
+    }
+    //-noimage
+  }
+  // __img
+
+  &__desc {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0d122b;
+    margin: 10px 0;
+  }
+  // __desc
+
+  &__price {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #0d122b;
+    margin-bottom: 10px;
+
+    &-sale {
+      color: #9fa1ac;
+
+      &::after {
+        content: attr(data-price);
+        color: #ff630e;
+      }
+      // &-sale::after
+    }
+    // &-sale
+
+    &-noPrice {
+      color: #9fa1ac;
+    }
+
+  }
+  // __price
+
+  &__btn {
+    width: 190px;
+    padding: 8px;
+    background: #ff0445;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+
+    &-unactive {
+      background: #d8d8d8;
+    }
+    // -unactive
+
+    &::after {
+      content: 'купить';
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    // :after
+
+  }
+  // __btn
+
+}
+
+// productsItem
