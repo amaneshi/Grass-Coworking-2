@@ -8,6 +8,37 @@
 }
 
 @font-face {
+    font-family: "GalanoGrotesqueRegular";
+    src: url("../fonts/GalanoGrotesqueRegular/Galano Grotesque.woff") format("woff"),
+    url("../fonts/GalanoGrotesqueRegular/Galano Grotesque.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GalanoGrotesqueMedium";
+    src: url("../fonts/GalanoGrotesqueMedium/Galano Grotesque Medium.woff") format("woff"),
+    url("../fonts/GalanoGrotesqueMedium/Galano Grotesque Medium.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "GalanoGrotesqueExtraBold";
+    src: url("../fonts/GalanoGrotesqueExtraBold/Galano Grotesque Extra Bold.woff") format("woff"),
+    url("../fonts/GalanoGrotesqueExtraBold/Galano Grotesque Extra Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "GalanoGrotesqueSemiBold";
+    src: url("../fonts/GalanoGrotesqueSemiBold/Galano Grotesque Semi Bold.woff") format("woff"),
+    url("../fonts/GalanoGrotesqueSemiBold/Galano Grotesque Semi Bold.otf") format("opentype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "OpenSansRegular";
     src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
     src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"),
