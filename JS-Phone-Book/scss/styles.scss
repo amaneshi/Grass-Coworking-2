@@ -1,0 +1,199 @@
+$cl_main: black;
+$cl_alt: white;
+$cl_bg_card: rgba(255, 255, 255, 0.2);
+$cl_font_sub: blue;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: $cl_alt;
+  font-size: 45px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: $cl_main url("./../img/main-bg.jpg") center center / cover;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.title-main {
+  font-size: 2rem;
+}
+
+.header-search {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.header-search:hover .contact-search {
+  opacity: 1;
+  width: 80%;
+}
+
+.contact-search {
+  opacity: 0;
+  width: 0;
+  transition: all 0.5s;
+  color: $cl_main;
+  box-shadow: 0 0 10px 10px $cl_main;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-new-contact,
+.refresh-contacts {
+  padding: 15px;
+  margin: 15px 0;
+  background: $cl_bg_card;
+  border: solid $cl_alt;
+  border-radius: 20px;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.contacts-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border: $cl_alt solid;
+  border-radius: 20px;
+  padding: 0 20px;
+}
+
+.contactItem {
+  opacity: 0.8;
+  padding: 20px;
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  border: solid $cl_alt;
+  background: $cl_bg_card;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__id {
+    display: none;
+  }
+
+  &__name {
+    display: flex;
+    font-size: 1.2rem;
+
+    &__first,
+    &__last {
+      padding: 0 10px;
+      font-size: 1.5rem;
+    }
+  }
+
+  &__phoneNumber {
+    padding: 0 10px;
+  }
+
+  &__controls {
+    &__edit,
+    &__delete {
+      padding: 5px 10px;
+      margin: 5px;
+      background: $cl_alt;
+      color: $cl_main;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+
+      i {
+        color: $cl_main;
+      }
+    }
+  }
+}
+
+.contactEdit {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  border: solid $cl_alt;
+
+  &__fields {
+    display: flex;
+    flex-direction: column;
+
+    &__hidden {
+      display: none;
+    }
+
+    &__firstName,
+    &__lastName,
+    &__phoneNumber {
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      label {
+        padding-right: 20px;
+      }
+
+      input {
+        color: $cl_main;
+        width: 50%;
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: center;
+    &__save,
+    &__cancel {
+      padding: 5px 10px;
+      margin: 5px;
+      background: $cl_alt;
+      color: $cl_main;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+
+      i {
+        color: $cl_main;
+      }
+    }
+
+  }
+}
+

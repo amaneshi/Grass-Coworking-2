@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "firstName": "Name1",
+    "lastName": "Last1",
+    "phoneNumber": "phone1"
+  },
+  {
+    "id": 2,
+    "firstName": "Name2",
+    "lastName": "Last2",
+    "phoneNumber": "phone2"
+  },
+  {
+    "id": 3,
+    "firstName": "Name3",
+    "lastName": "Last3",
+    "phoneNumber": "phone3"
+  },
+  {
+    "id": 4,
+    "firstName": "Name4",
+    "lastName": "Last4",
+    "phoneNumber": "phone4"
+  },
+  {
+    "id": 5,
+    "firstName": "Name5",
+    "lastName": "Last5",
+    "phoneNumber": "phone5"
+  }
+]

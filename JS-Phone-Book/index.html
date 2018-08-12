@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book</title>
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div class="header-content">
+            <div class="header-title">
+                <h1 class="title-main">Phone Book</h1>
+            </div>
+            <div class="header-search">
+                <label for="contact-search" class="search-icon">
+                    <i class="fa fa-search"></i>
+                </label>
+                <input id="contact-search" name="search" type="text" class="contact-search"
+                       placeholder="Input name for search...">
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="wrapper">
+        <div class="contacts-block">
+            <div class="top-controls">
+                <div class="add-new-contact">
+                    <i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Add new contact
+                </div>
+                <div class="refresh-contacts">
+                    <i class="fa fa-refresh"></i>&nbsp;&nbsp;Refresh contacts
+                </div>
+            </div>
+            <ul class="contacts-list">
+            </ul>
+        </div>
+    </div>
+</main>
+<footer></footer>
+<form class="contactEdit" style="display: none">
+    <div class="contactEdit__fields">
+        <div class="contactEdit__fields__hidden">
+            <input type="hidden" name="isNew" value="0">
+            <input type="hidden" name="contactId" value="0">
+        </div>
+        <div class="contactEdit__fields__lastName">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Last name...">
+        </div>
+        <div class="contactEdit__fields__firstName">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="First name...">
+        </div>
+        <div class="contactEdit__fields__phoneNumber">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone...">
+        </div>
+    </div>
+    <div class="contactEdit__controls">
+        <div class="contactEdit__controls__save">
+            <i class="fa fa-floppy-o"></i>&nbsp;&nbsp;Save
+        </div>
+        <!-- /.contactEdit__controls__save -->
+        <div class="contactEdit__controls__cancel">
+            <i class="fa fa-ban"></i>&nbsp;&nbsp;Cancel
+        </div>
+        <!-- /.contactEdit__controls__cancel -->
+    </div>
+</form>
+<!-- /.contactEdit -->
+<div class="contactItem" style="display: none">
+    <div class="contactItem__info">
+        <div class="contactItem__id">
+        </div>
+        <div class="contactItem__name">
+            <div class="contactItem__name__last"></div>
+            <div class="contactItem__name__first"></div>
+        </div>
+        <div class="contactItem__phoneNumber"></div>
+    </div>
+    <div class="contactItem__controls">
+        <div class="contactItem__controls__edit">
+            <i class="fa fa-pencil-square-o"></i>&nbsp;&nbsp;Edit
+        </div>
+        <!-- /.contactItem__controls__edit -->
+        <div class="contactItem__controls__delete">
+            <i class="fa fa-trash-o"></i>&nbsp;&nbsp;Delete
+        </div>
+        <!-- /.contactItem__controls__delete -->
+    </div>
+    <!-- /.contactItem__controls -->
+</div>
+
+
+<script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 45px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: black url("./../img/main-bg.jpg") center center/cover;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.title-main {
+  font-size: 2rem;
+}
+
+.header-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -webkit-flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.header-search:hover .contact-search {
+  opacity: 1;
+  width: 80%;
+}
+
+.contact-search {
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  color: black;
+  -webkit-box-shadow: 0 0 10px 10px black;
+          box-shadow: 0 0 10px 10px black;
+}
+
+.search-icon {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.top-controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.add-new-contact,
+.refresh-contacts {
+  padding: 15px;
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border: solid white;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.contacts-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: white solid;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  padding: 0 20px;
+}
+
+.contactItem {
+  opacity: 0.8;
+  padding: 20px;
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: solid white;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.contactItem__info {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactItem__id {
+  display: none;
+}
+
+.contactItem__name {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+}
+
+.contactItem__name__first, .contactItem__name__last {
+  padding: 0 10px;
+  font-size: 1.5rem;
+}
+
+.contactItem__phoneNumber {
+  padding: 0 10px;
+}
+
+.contactItem__controls__edit, .contactItem__controls__delete {
+  padding: 5px 10px;
+  margin: 5px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  cursor: pointer;
+}
+
+.contactItem__controls__edit i, .contactItem__controls__delete i {
+  color: black;
+}
+
+.contactEdit {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  border: solid white;
+}
+
+.contactEdit__fields {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactEdit__fields__hidden {
+  display: none;
+}
+
+.contactEdit__fields__firstName, .contactEdit__fields__lastName, .contactEdit__fields__phoneNumber {
+  margin: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contactEdit__fields__firstName label, .contactEdit__fields__lastName label, .contactEdit__fields__phoneNumber label {
+  padding-right: 20px;
+}
+
+.contactEdit__fields__firstName input, .contactEdit__fields__lastName input, .contactEdit__fields__phoneNumber input {
+  color: black;
+  width: 50%;
+}
+
+.contactEdit__controls {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contactEdit__controls__save, .contactEdit__controls__cancel {
+  padding: 5px 10px;
+  margin: 5px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  cursor: pointer;
+}
+
+.contactEdit__controls__save i, .contactEdit__controls__cancel i {
+  color: black;
+}
