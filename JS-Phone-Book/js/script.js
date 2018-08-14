@@ -41,6 +41,7 @@
 
         function addContact(event) {
             //console.log('Add contact event');
+            clearEditForm();
             contactIsNewField.value = 1;
             contactsList.parentNode.insertBefore(contactEdit, contactsList);
             showNode(contactEdit);
@@ -48,7 +49,7 @@
 
         function reloadContactsManual(event) {
             searchField.value = '';
-            getContacts();
+            reloadContacts();
         }
 
         function editContact(event) {
@@ -77,6 +78,8 @@
         function saveContact(event) {
             //console.log('Save contact event');
             let newContactObject = getContactFromEdit();
+            if (!newContactObject)
+                return;
             if (contactIsNewField.value === '1') {
                 if (contactsArray.length === 0) {
                     newContactObject.id = 1;
@@ -112,6 +115,7 @@
             //reload contacts from storage
             if (localStorage.phoneBook) {
                 contactsArray = JSON.parse(localStorage.phoneBook);
+                reloadContacts();
             } else {
                 loadJSON(function (json) {
                     contactsArray = JSON.parse(json);
@@ -159,11 +163,25 @@
 
         function getContactFromEdit() {
             let contactObject = {};
+            let errorMessage = '';
             contactObject.id = contactIdField.value;
-            contactObject.firstName = contactFirstNameField.value;
-            contactObject.lastName = contactLastNameField.value;
-            contactObject.phoneNumber = contactPhoneNumberField.value;
-            return contactObject;
+            if (contactFirstNameField.value !== '')
+                contactObject.firstName = contactFirstNameField.value;
+            else
+                errorMessage += 'Field "First Name" can\'t be empty!\n';
+            if (contactLastNameField.value !== '')
+                contactObject.lastName = contactLastNameField.value;
+            else
+                errorMessage += 'Field "Last Name" can\'t be empty!\n';
+            if (contactPhoneNumberField.value !== '' && !isNaN(contactPhoneNumberField.value))
+                contactObject.phoneNumber = contactPhoneNumberField.value;
+            else
+                errorMessage += 'Field "Phone Number" can\'t be empty and can contain only numbers!\n';
+
+            if (errorMessage === '')
+                return contactObject;
+            else
+                alert(errorMessage);
         }
 
         function clearEditForm() {
