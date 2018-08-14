@@ -129,7 +129,9 @@
                 contactsList.removeChild(contactsList.firstChild);
 
             contactsArray.forEach(function (item) {
-                if (typeof filterString === 'string' && item.lastName.includes(filterString)) {
+                if (item.lastName.toLowerCase().includes(filterString.toLowerCase())
+                    || item.firstName.toLowerCase().includes(filterString.toLowerCase())
+                    || item.phoneNumber.toLowerCase().includes(filterString.toLowerCase())) {
                     let newContactItemNode = contactItemTemplate.cloneNode(true);
                     showNode(newContactItemNode);
                     fillContactItem(newContactItemNode, item);
